@@ -1,11 +1,9 @@
-import SearchBar from "./components/SearchBar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <SearchBar />
-      <SearchBar />
-      <SearchBar />
+      <Home />
     </>
   );
 }

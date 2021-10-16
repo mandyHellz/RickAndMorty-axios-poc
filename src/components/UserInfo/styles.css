@@ -1,0 +1,30 @@
+.user-profile {
+  display: flex;
+  background-color: rgb(240, 239, 239);
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.profile-picture {
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.username {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.user-info span {
+  color: rgb(69, 69, 69);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.user-info span + span {
+  margin-left: 10px;
+}
