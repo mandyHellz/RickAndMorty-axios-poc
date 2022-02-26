@@ -1,15 +1,24 @@
-import './styles.css';
+import "./styles.css";
 
-export default function UserInfo(props) {
+export default function UserInfo({ char }) {
   return (
-    <div className="user-profile">
-      <img className="profile-picture" src={props.user.avatar_url} alt="Profile Pic" />
-      <div className="user-info">
-        <p className="username">{props.user.login}</p>
-        <span>Followers: {props.user.followers}</span>
-        <span>Following: {props.user.following}</span>
-
+    <div className="profile">
+      <div className="id-profile">
+        <img className="profile-picture" src={char.image} alt="Profile Pic" />
+        <p className="character-name">{char.name}</p>
+      </div>
+      <div className="profile-info">
+        <div className="infos-section">
+          <div>
+            <p>Specie: {char.species}</p>
+            <p>Status: {char.status}</p>
+          </div>
+          <div>
+            <p>Specie: {char.type}</p>
+            <p>Status: {char.gender}</p>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }

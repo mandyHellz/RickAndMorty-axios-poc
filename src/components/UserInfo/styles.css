@@ -1,17 +1,43 @@
-.user-profile {
+.profile {
+  background: #348f50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #56b4d3,
+    #348f50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #56b4d3,
+    #348f50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
-  background-color: rgb(240, 239, 239);
   align-items: center;
-  padding: 20px 10px;
+  padding: 40px 20px;
   border-radius: 8px;
-  margin: 10px 0;
+  margin: 20px;
+  transition: all 0.9s;
+}
+
+.profile:hover {
+  background: #67b26f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #4ca2cd,
+    #67b26f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #4ca2cd,
+    #67b26f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .profile-picture {
-  height: 50px;
-  border-radius: 50%;
-  width: 50px;
+  width: 35%;
+  height: 35%;
   margin-right: 10px;
+  border-radius: 50%;
+  min-width: 100px;
 }
 
 .username {
@@ -27,4 +53,52 @@
 
 .user-info span + span {
   margin-left: 10px;
+}
+
+.id-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.infos-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .id-profile {
+    width: 80%;
+  }
+
+  .infos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .profile-info {
+    width: 80%;
+  }
 }

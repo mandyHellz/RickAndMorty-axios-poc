@@ -1,8 +1,5 @@
-import SearchBar from '../../components/SearchBar';
-import './styles.css';
+import Search from "../../components/Search";
 
 export default function Home() {
-  return (
-    <SearchBar />
-  )
+  return <Search />;
 }
